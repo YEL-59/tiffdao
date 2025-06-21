@@ -19,7 +19,7 @@ const Home = () => {
       <div>
         <ProcessSection />
       </div>
-      <div>
+      {/* <div>
         <Service />
       </div>
       <div>
@@ -30,7 +30,7 @@ const Home = () => {
       </div>
       <div>
         <Bottom />
-      </div>
+      </div> */}
     </>
   );
 };
