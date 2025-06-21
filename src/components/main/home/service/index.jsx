@@ -10,14 +10,16 @@ const Service = () => {
   return (
     <section className="bg-[#197AB2] py-12 px-4 text-center">
       <p className="text-sm text-[#FFF] font-medium">Our Services</p>
-      <h2 className="text-3xl font-bold mt-2 text-white">What We Offer</h2>
+      <h2 className="text-white text-center font-sans text-[64px] font-bold leading-[80px]">
+        What We Offer
+      </h2>
       <p className="text-sm text-[#FFF] mt-1 max-w-xl mx-auto">
         Discover Our Structured and Reliable Process Designed to Deliver
         Consistent, High-Quality Cleaning Services with Efficiency and Care
       </p>
-      <div className="flex items-end justify-end">
+      <div className="flex items-end justify-center md:justify-end py-15 md:py-0">
         <div>
-          <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-4 gap-6 items-stretch">
+          <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-4 gap-20 md:gap-6 items-stretch">
             {/* Clean Card */}
             <div className="relative flex flex-col h-[315px] w-[297px] group">
               <Card
@@ -116,7 +118,7 @@ const Service = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <img src={img} alt="" />
         </div>
       </div>

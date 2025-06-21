@@ -11,11 +11,17 @@ const Hero = () => {
         className="text-start max-w-2xl w-full md:ml-20 mt-16 md:mt-32"
         data-aos="fade-up"
       >
-        <h1 className="text-black font-public text-[28px] sm:text-[40px] md:text-[64px] lg:text-[80px] xl:text-[96px] font-bold leading-tight mb-4">
+        <h1
+          className="text-black  text-[28px] sm:text-[40px] md:text-[64px] lg:text-[80px] xl:text-[86px]  font-bold leading-tight mb-4"
+          style={{ fontFamily: '"Public Sans", sans-serif' }}
+        >
           <span className="text-[#F1C601]">Hassle-Free </span> Home Cleaning
           Services
         </h1>
-        <p className="text-[#797979] font-public text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] mb-6">
+        <p
+          className="text-[#797979] font-public text-[16px] sm:text-[18px] leading-[24px] sm:leading-[28px] mb-6"
+          style={{ fontFamily: '"Public Sans", sans-serif' }}
+        >
           Saving You Time and Eliminating Stress Through Quality Home Cleaning.
           Serving Orange County, California and Parts of San Bernardino and
           Riverside Counties.
