@@ -9,12 +9,16 @@ const About = () => {
       <div className="container mx-auto py-10">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
           <div className="flex flex-col">
-            <p className="text-[#0166A8] text-xl font-medium uppercase">
+            <p
+              className="text-[#0166A8] text-xl font-medium uppercase"
+              style={{ fontFamily: '"Public Sans", sans-serif' }}
+            >
               About US
             </p>
             <h1
               data-aos="fade-right"
               className="text-black font-public max-w-xl text-[32px] sm:text-[40px] lg:text-[48px] font-bold  text-center lg:text-left"
+              style={{ fontFamily: '"Public Sans", sans-serif' }}
             >
               Over a Decade Of Excellence in Services
             </h1>
@@ -22,6 +26,7 @@ const About = () => {
           <p
             data-aos="fade-left"
             className="text-black font-open-sans text-[16px] sm:text-[18px] font-normal leading-[27px] text-center lg:text-left max-w-2xl"
+            style={{ fontFamily: '"Public Sans", sans-serif' }}
           >
             At The Top Touch we are committed to providing excellent cleaning
             solutions to our community. Our team of experts offers premium
