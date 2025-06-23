@@ -10,27 +10,27 @@ import { Button } from "@/components/ui/button";
 const Home = () => {
   return (
     <>
-      <div>
+      <div id="home">
         <Hero />
       </div>
-      <div>
+      <div id="about">
         <About />
       </div>
       <div>
         <ProcessSection />
       </div>
-      {/* <div>
+      <div id="service">
         <Service />
       </div>
       <div>
         <Faq />
       </div>
-      <div>
+      <div id="testimonial">
         <TestimonialCarousel />
       </div>
-      <div>
+      <div id="contact">
         <Bottom />
-      </div> */}
+      </div>
     </>
   );
 };

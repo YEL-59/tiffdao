@@ -11,11 +11,11 @@ const Navbar = () => {
   const location = useLocation();
 
   const list = [
-    { label: "Home", to: "#" },
-    { label: "About", to: "#" },
-    { label: "Services", to: "#" },
-    { label: "Contact Us", to: "#" },
-    { label: "Testimonials", to: "#" },
+    { label: "Home", to: "#home" },
+    { label: "About", to: "#about" },
+    { label: "Services", to: "#service" },
+    { label: "Contact Us", to: "#contact" },
+    { label: "Testimonials", to: "#testimonial" },
   ];
 
   useEffect(() => {
@@ -31,6 +31,33 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  const [activeSection, setActiveSection] = useState("#");
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section, div[id]");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = `#${entry.target.id}`;
+            setActiveSection(id);
+          }
+        });
+      },
+      {
+        rootMargin: "-50% 0px -50% 0px", // Trigger when section is in middle of viewport
+        threshold: 0.1,
+      }
+    );
+
+    sections.forEach((section) => {
+      if (section.id) {
+        observer.observe(section);
+      }
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -48,24 +75,37 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <ul className="hidden lg:flex gap-8">
-          {list.map((item, i) => (
-            <li key={i}>
-              <a
-                href={item.to}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#0D0D0D] font-roboto text-[18px] font-public leading-none hover:underline"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
+          {list.map((item, i) => {
+            return (
+              <li key={i}>
+                <button
+                  onClick={() => {
+                    const el = document.querySelector(item.to);
+                    if (el) {
+                      el.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
+                  className={`text-[#303030] font-public text-base font-normal leading-[26px] ${
+                    activeSection === item.to
+                      ? "font-bold text-[#0166A8]"
+                      : "font-normal"
+                  }`}
+                  style={{ fontFamily: '"Public Sans", sans-serif' }}
+                >
+                  {item.label}
+                </button>
+              </li>
+            );
+          })}
         </ul>
 
         {/* Book A Cleaning button */}
         <div className="hidden md:block">
           <a href="#" target="_blank" rel="noopener noreferrer">
-            <Button className="bg-[#0166A8] text-white  text-[16px] rounded-full font-public px-5 hover:border-[#6049bc]">
+            <Button
+              className="bg-[#0166A8] text-white  text-[16px] rounded-full  px-5 hover:border-[#6049bc]"
+              style={{ fontFamily: '"Public Sans", sans-serif' }}
+            >
               Book A Cleaning
             </Button>
           </a>
@@ -87,10 +127,13 @@ const Navbar = () => {
                 {list.map((item, i) => (
                   <a
                     key={i}
-                    href={item.to}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsOpen(false)}
+                    onClick={() => {
+                      setIsOpen(false);
+                      const el = document.querySelector(item.to);
+                      if (el) {
+                        el.scrollIntoView({ behavior: "smooth" });
+                      }
+                    }}
                     className="text-[16px] font-roboto font-medium transition hover:text-primary"
                   >
                     {item.label}

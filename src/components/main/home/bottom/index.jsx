@@ -17,8 +17,15 @@ const Bottom = () => {
           Issues. Don't Wait - Reach Out To Our Team For Quick, Reliable Help.
         </p>
         <div className="flex justify-start gap-5 flex-wrap">
-          <Button>Call Now</Button>
-          <Button variant="secondary">Contact Us</Button>
+          <Button className="bg-transparent border hover:bg-white rounded-full text-[#197AB2] px-5 py-5">
+            Call Now
+          </Button>
+          <Button
+            variant="secondary"
+            className="bg-transparent border hover:bg-white rounded-full text-[#197AB2] px-5 py-5"
+          >
+            Learn More
+          </Button>
         </div>
       </div>
     </div>
