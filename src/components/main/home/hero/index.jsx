@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="relative bg-center bg-no-repeat min-h-screen  text-white px-4 sm:px-6 md:px-12 bg-cover">
       {/* Hero content */}
 
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-start max-w-2xl w-full mt-20  " data-aos="fade-up">
           <h1
             className="text-black text-[28px] xs:text-[32px] sm:text-[40px] md:text-[56px] lg:text-[65px] xl:text-[80px] 2xl:text-[86px] font-bold leading-tight mb-4"
@@ -50,7 +50,7 @@ const Hero = () => {
       </div>
 
       {/* Bottom SVG */}
-      <div className="absolute bottom-0 left-0 w-full overflow-x-hidden">
+      <div className="absolute bottom-0 left-0 w-full overflow-x-hidden hidden md:block">
         <Bottomsvg />
       </div>
     </div>

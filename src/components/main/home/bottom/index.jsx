@@ -9,7 +9,7 @@ const Bottom = () => {
     >
       {/* Content */}
       <div className="relative  container mx-auto text-start space-y-6">
-        <h1 className="text-white font-public-sans text-5xl md:text-[64px] font-bold leading-[80px] max-w-xl">
+        <h1 className="text-white font-public-sans text-xl md:text-[64px] font-bold leading-[80px] max-w-xl">
           Having Problem? We’ll Fix It Today!
         </h1>
         <p className="text-white font-public-sans text-[16px] font-normal leading-[26px] max-w-xl">

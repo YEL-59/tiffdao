@@ -34,7 +34,7 @@ const Faq = () => {
                 feel free to contact us directly.
               </p>
             </div>
-            <div className="py-5 w-full">
+            <div className="py-5 w-full p-5 md:p-0">
               {" "}
               <Accordion
                 type="single"
@@ -94,7 +94,7 @@ const Faq = () => {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-3">
+                <AccordionItem value="item-4">
                   <AccordionTrigger className="text-black font-public-sans text-[20px] font-bold leading-[30px]">
                     Can I later reschedule my booking online?
                   </AccordionTrigger>
@@ -111,7 +111,7 @@ const Faq = () => {
                     </p>
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-3">
+                <AccordionItem value="item-5">
                   <AccordionTrigger className="text-black font-public-sans text-[20px] font-bold leading-[30px]">
                     When will I get a confirmation?
                   </AccordionTrigger>
