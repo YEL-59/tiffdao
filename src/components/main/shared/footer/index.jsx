@@ -6,15 +6,15 @@ import logo from "../../../../assets/footerlogo.png";
 const Footer = () => {
   return (
     <footer className="bg-[#245472] text-white">
-      <div className="container mx-auto px-4 py-20 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-20 flex flex-col md:flex-row justify-between">
         {/* Logo + Description + Socials */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 ">
           <div className="flex items-center gap-2">
             <div className="p-2 rounded-full">
               <img src={logo} alt="" />
             </div>
           </div>
-          <p className="text-sm">
+          <p className="text-sm max-w-sm">
             We are committed to providing top-quality cleaning services with
             honesty and integrity
           </p>
@@ -34,51 +34,53 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Quick Links */}
-        <div>
-          <h4 className="font-semibold mb-2">Quick Links</h4>
-          <ul className="space-y-1 text-sm">
-            <li>
-              <a href="#" className="hover:underline">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">
-                Testimonials
-              </a>
-            </li>
-          </ul>
-        </div>
+        <div className="flex flex-col md:flex-row gap-20">
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-[20px] font-bold mb-2">Quick Links</h4>
+            <ul className="space-y-1 text-sm">
+              <li>
+                <a href="#" className="hover:underline text-[16px] font-normal">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline text-[16px] font-normal">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline text-[16px] font-normal">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:underline text-[16px] font-normal">
+                  Testimonials
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        {/* Contact Info */}
-        <div>
-          <h4 className="font-semibold mb-2">Contact info</h4>
-          <ul className="space-y-1 text-sm">
-            <li>Phone: +123 456 7890</li>
-            <li>Address: 421 Allen, Mexico 4293</li>
-            <li>Email: info@gmail.com</li>
-            <li>Website: www.clean.com</li>
-          </ul>
-        </div>
+          {/* Contact Info */}
+          <div>
+            <h4 className="text-[20px] font-bold mb-2">Contact info</h4>
+            <ul className="space-y-1  text-[16px] font-normal">
+              <li>Phone: +123 456 7890</li>
+              <li>Address: 421 Allen, Mexico 4293</li>
+              <li>Email: info@gmail.com</li>
+              <li>Website: www.clean.com</li>
+            </ul>
+          </div>
 
-        {/* Working Hours */}
-        <div>
-          <h4 className="font-semibold mb-2">Working hours</h4>
-          <ul className="space-y-1 text-sm">
-            <li>Monday-Saturday: 9:00 AM - 6:00 PM</li>
-            <li>Sunday: Closed</li>
-          </ul>
+          {/* Working Hours */}
+          <div>
+            <h4 className="text-[20px] font-bold mb-2">Working hours</h4>
+            <ul className="space-y-1  text-[16px] font-normal">
+              <li>Monday-Saturday: 9:00 AM - 6:00 PM</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
         </div>
       </div>
 

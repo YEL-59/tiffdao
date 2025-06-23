@@ -47,16 +47,20 @@ const testimonials = [
 const TestimonialCarousel = () => {
   return (
     <section className="py-12 px-4 bg-white text-center">
-      <p className="text-sm text-blue-600 font-medium">TESTIMONIALS</p>
-      <h2 className="text-3xl font-bold mt-2">What Our Clients Say</h2>
+      <p className="text-sm text-[#0166A8] font-medium uppercase">
+        TESTIMONIALS
+      </p>
+      <h2 className="text-2xl md:text-[64px] font-bold mt-2">
+        What Our Clients Say
+      </h2>
       <p className="text-sm text-gray-500 mt-1 max-w-xl mx-auto">
         Discover Our Structured and Reliable Process Designed to Deliver
         Consistent, High-Quality Cleaning Services with Efficiency and Care
       </p>
 
-      <div className="mt-10 ">
+      <div className="mt-10 md:mt-20 ">
         <Swiper
-          className="!pb-10"
+          className="!pb-20"
           modules={[Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}

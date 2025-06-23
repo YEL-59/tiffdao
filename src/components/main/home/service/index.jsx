@@ -9,7 +9,7 @@ import img3 from "../../../../assets/service3.png";
 const Service = () => {
   return (
     <section className="bg-[#197AB2] py-12 px-4 text-center">
-      <p className="text-sm text-[#FFF] font-medium">Our Services</p>
+      <p className="text-sm text-[#FFF] font-medium uppercase">Our Services</p>
       <h2 className="text-white text-center font-sans text-[64px] font-bold leading-[80px]">
         What We Offer
       </h2>
@@ -17,7 +17,7 @@ const Service = () => {
         Discover Our Structured and Reliable Process Designed to Deliver
         Consistent, High-Quality Cleaning Services with Efficiency and Care
       </p>
-      <div className="flex items-end justify-center md:justify-end py-15 md:py-0">
+      <div className="flex items-center justify-center md:justify-center py-15 md:py-0">
         <div>
           <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-4 gap-20 md:gap-6 items-stretch">
             {/* Clean Card */}
