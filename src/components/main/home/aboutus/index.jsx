@@ -5,7 +5,10 @@ import img4 from "../../../../assets/aboutus4.png";
 
 const About = () => {
   return (
-    <div className="py-10 md:py-30 px-4">
+    <div
+      className="py-10 md:py-30 px-4"
+      style={{ fontFamily: '"Public Sans", sans-serif' }}
+    >
       {/* Heading and description */}
       <div className=" container mx-auto flex flex-col lg:flex-row justify-between items-center gap-8">
         <div className="flex flex-col">
@@ -40,24 +43,36 @@ const About = () => {
         </p>
       </div>
 
-      {/* Image grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-4  items-center md:items-end justify-center md:justify-end gap-4  py-10 max-w-full">
-        <div
-          className="h-[660px] w-[402px] aspect-[660/402]"
-          style={{ backgroundImage: ` url(${img1})` }}
-        ></div>
-        <div
-          className="h-[467px] w-[401px] aspect-[467/401]"
-          style={{ backgroundImage: `url(${img2})` }}
-        ></div>
-        <div
-          className="h-[604px] w-[402px] aspect-[604/402]"
-          style={{ backgroundImage: `url(${img3})` }}
-        ></div>
-        <div
-          className="h-[575px] w-[402px] aspect-[575/402]"
-          style={{ backgroundImage: `url(${img4})` }}
-        ></div>
+      {/* Images in a single row, equal height */}
+      <div className="container mx-auto flex flex-col md:flex-row flex-wrap items-end md:flex-nowrap gap-4 pt-10">
+        <div className="flex-1 w-full">
+          <img
+            src={img1}
+            alt="Cleaning supplies"
+            className="w-full h-120 md:h-150 object-cover rounded-4xl"
+          />
+        </div>
+        <div className="flex-1 w-full">
+          <img
+            src={img2}
+            alt="Woman cleaning"
+            className="w-full h-120 md:h-80 object-cover rounded-4xl"
+          />
+        </div>
+        <div className="flex-1 w-full">
+          <img
+            src={img3}
+            alt="Man cleaning"
+            className="w-full h-120 md:h-120 object-cover rounded-4xl"
+          />
+        </div>
+        <div className="flex-1 w-full">
+          <img
+            src={img4}
+            alt="Hand cleaning sink"
+            className="w-full h-120 md:h-140 object-cover rounded-4xl"
+          />
+        </div>
       </div>
     </div>
   );

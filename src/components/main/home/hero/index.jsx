@@ -4,13 +4,16 @@ import Bottomsvg from "@/assets/bottomsvg";
 import heroimg from "../../../../assets/heroimg.jpg";
 const Hero = () => {
   return (
-    <div className="relative bg-center bg-no-repeat min-h-screen  text-white px-4 sm:px-6 md:px-12 bg-cover">
+    <div
+      className="relative bg-center bg-no-repeat min-h-screen  text-white px-4 sm:px-6 md:px-12 bg-cover"
+      style={{ fontFamily: '"Public Sans", sans-serif' }}
+    >
       {/* Hero content */}
 
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-start max-w-2xl w-full mt-20  " data-aos="fade-up">
           <h1
-            className="text-black text-[28px] xs:text-[32px] sm:text-[40px] md:text-[56px] lg:text-[65px] xl:text-[80px] 2xl:text-[86px] font-bold leading-tight mb-4"
+            className="text-black text-[28px] xs:text-[32px] sm:text-[40px] md:text-[56px] lg:text-[65px] 2xl:text-[80px] 2xl:text-[86px] font-bold leading-tight mb-4"
             style={{ fontFamily: '"Public Sans", sans-serif' }}
           >
             <span className="text-[#F1C601]">Hassle-Free </span> Home Cleaning
@@ -38,7 +41,7 @@ const Hero = () => {
           data-aos="zoom-in"
         >
           <div
-            className="absolute top-4 left-4 w-full h-full rounded-lg -z-10"
+            className="absolute top-4 left-4 w-full h-full rounded-lg -z-10 hidden md:block"
             style={{ backgroundColor: "#4A90E2" }}
           ></div>
           <img

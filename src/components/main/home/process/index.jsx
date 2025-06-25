@@ -1,10 +1,16 @@
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon, HomeIcon, BrushIcon } from "lucide-react";
+import img1 from "../../../../assets/calender.png";
+import img2 from "../../../../assets/clean.png";
+import img3 from "../../../../assets/house.png";
 
 const ProcessSection = () => {
   return (
-    <section className="bg-[#f0f6fb] py-10 md:py-30 px-4 text-center">
+    <section
+      className="bg-[#f0f6fb] py-10 md:py-30 px-4 text-center"
+      style={{ fontFamily: '"Public Sans", sans-serif' }}
+    >
       <p className="text-xl text-blue-600 font-medium">PROCESS</p>
       <h2 className="text-xl md:text-6xl font-bold mt-2">How It Works</h2>
       <p className="text-sm text-[#797979] mt-1 max-w-xl mx-auto">
@@ -35,15 +41,15 @@ const ProcessSection = () => {
               </Button>
             </CardContent>
           </Card>
-          <div className="absolute -top-0 left-1/2 -translate-x-1/2 bg-white rounded-full p-5 shadow-2xl">
-            <BrushIcon className="text-blue-600 w-12 h-12" />
+          <div className="absolute -top-0 left-1/2 -translate-x-1/2 bg-[#197AB2] rounded-full p-5 shadow-2xl">
+            <img src={img2} alt="" className="h-12 w-12" />
           </div>
         </div>
 
         {/* Book Online */}
         <Card className="relative flex flex-col h-[345px] group bg-[#197AB2] text-white transition-colors duration-300 group-hover:bg-blue-800">
           <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white rounded-full p-5 shadow-2xl">
-            <CalendarIcon className="text-blue-600 w-12 h-12" />
+            <img src={img1} alt="" className="h-12 w-12" />
           </div>
           <CardContent className="pt-20 flex flex-col flex-1 justify-end text-center">
             <CardTitle className="text-[32px] font-bold text-[#0B0B0B] group-hover:text-white">
@@ -82,8 +88,8 @@ const ProcessSection = () => {
               </Button>
             </CardContent>
           </Card>
-          <div className="absolute -top-0 left-1/2 -translate-x-1/2 bg-white rounded-full p-5 shadow-2xl">
-            <HomeIcon className="text-blue-600 w-12 h-12" />
+          <div className="absolute -top-0 left-1/2 -translate-x-1/2 bg-[#197AB2] rounded-full p-5 shadow-2xl">
+            <img src={img3} alt="" className="h-12 w-12" />
           </div>
         </div>
       </div>

@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Link, useLocation } from "react-router";
+import { Link } from "react-router";
 import logo from "../../../../assets/logo.png";
 import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const location = useLocation();
 
   const list = [
     { label: "Home", to: "#home" },
@@ -62,15 +61,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full py-3 relative z-[1000] ${
+      className={`w-full  relative z-[1000] ${
         isSticky ? "md:sticky md:top-0" : ""
       } shadow-[0px_25px_60px_-15px_rgba(180,195,229,0.20)]`}
       style={{ backgroundColor: "#E3F1F8" }}
     >
-      <div className="container mx-auto flex items-center justify-between px-4">
+      <div className="container mx-auto flex items-center justify-between ">
         {/* Logo */}
-        <Link to="/" className="flex items-center space-x-2">
-          <img src={logo} alt="Logo" className="h-20" />
+        <Link to="/" className="flex items-center ">
+          <img src={logo} alt="Logo" className="h-auto" />
         </Link>
 
         {/* Desktop Nav Links */}
@@ -121,7 +120,7 @@ const Navbar = () => {
             </SheetTrigger>
             <SheetContent
               side="left"
-              className="w-[85%] sm:w-64 p-6 bg-[#0D0D0D] text-white z-[1001]"
+              className="w-[85%] sm:w-64 p-6 bg-white text-[#0166A8] z-[1001]"
             >
               <div className="flex flex-col space-y-4 mt-6">
                 {list.map((item, i) => (
@@ -143,7 +142,7 @@ const Navbar = () => {
 
               <div className="mt-10">
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full border border-white bg-transparent text-white font-roboto text-[16px] hover:border-[#6049bc]">
+                  <Button className="w-full border border-white bg-transparent text-[#0166A8] font-roboto text-[16px] hover:border-[#6049bc]">
                     Book A Cleaning
                   </Button>
                 </a>

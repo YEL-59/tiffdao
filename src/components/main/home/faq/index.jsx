@@ -9,7 +9,10 @@ const Faq = () => {
   return (
     <>
       <div>
-        <div className=" bg-[#f0f6fb] py-10 md:py-30">
+        <div
+          className=" bg-[#f0f6fb] py-10 md:py-30 px-5"
+          style={{ fontFamily: '"Public Sans", sans-serif' }}
+        >
           <div className="container mx-auto flex flex-col md:flex-row gap-5 justify-between w-full">
             <div className="w-2/3 text-center md:text-start mx-auto">
               <p
@@ -19,13 +22,13 @@ const Faq = () => {
                 FAQ’s
               </p>
               <h2
-                className="text-[#303030] text-3xl md:text-[64px] font-bold leading-[80px] max-w-7xl"
+                className="text-[#303030] text-3xl md:text-[64px] font-bold leading-[60px] md:leading-[80px] max-w-7xl"
                 style={{ fontFamily: '"Public Sans", sans-serif' }}
               >
                 Frequently Asking Questions
               </h2>
               <p
-                className="text-[#797979]  text-[16px] font-normal leading-[26px] max-w-xl"
+                className="text-[#797979]  text-[16px] font-normal leading-[26px] md:max-w-xl"
                 style={{ fontFamily: '"Public Sans", sans-serif' }}
               >
                 {" "}

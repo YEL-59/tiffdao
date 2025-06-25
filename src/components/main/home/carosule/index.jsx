@@ -46,7 +46,10 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   return (
-    <section className="py-12 px-4 bg-white text-center">
+    <section
+      className="py-12 px-4 bg-white text-center"
+      style={{ fontFamily: '"Public Sans", sans-serif' }}
+    >
       <p className="text-sm text-[#0166A8] font-medium uppercase">
         TESTIMONIALS
       </p>
