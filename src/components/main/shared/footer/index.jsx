@@ -67,9 +67,9 @@ const Footer = () => {
             <h4 className="text-[20px] font-bold mb-2">Contact info</h4>
             <ul className="space-y-1  text-[16px] font-normal">
               <li>Phone: 954 247 4581</li>
-              <li>Address: 421 Allen, Mexico 4293</li>
+
               <li>Email: tiffany@the-toptouchllc.com</li>
-              <li>Website: www.clean.com</li>
+              <li>Website: www.the-toptouchllc.com</li>
             </ul>
           </div>
 

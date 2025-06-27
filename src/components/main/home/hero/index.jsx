@@ -13,10 +13,10 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="text-start max-w-2xl w-full mt-20  " data-aos="fade-up">
           <h1
-            className="text-black text-[28px] xs:text-[32px] sm:text-[40px] md:text-[56px] lg:text-[65px] 2xl:text-[80px] 2xl:text-[86px] font-bold leading-tight mb-4"
+            className="text-[#000080] text-[28px] xs:text-[32px] sm:text-[40px] md:text-[56px] lg:text-[65px] 2xl:text-[86px] font-bold leading-tight mb-4"
             style={{ fontFamily: '"Public Sans", sans-serif' }}
           >
-            <span className="text-[#F1C601]">Hassle-Free </span> Home Cleaning
+            <span className="text-[#7BAE6B]">Hassle-Free </span> Home Cleaning
             Services
           </h1>
           <p

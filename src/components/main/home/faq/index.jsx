@@ -47,87 +47,47 @@ const Faq = () => {
               >
                 <AccordionItem value="item-1">
                   <AccordionTrigger className="text-black font-public-sans text-[20px] font-bold leading-[30px]">
-                    What services of you offer?
+                    How Do I Schedule Online?
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-4 text-balance">
                     <p>
-                      Our flagship product combines cutting-edge technology with
-                      sleek design. Built with premium materials, it offers
-                      unparalleled performance and reliability.
-                    </p>
-                    <p>
-                      Key features include advanced processing capabilities, and
-                      an intuitive user interface designed for both beginners
-                      and experts.
+                      To schedule online, all you have to do is fill out some
+                      details about what you need, who you are, pick a date/time
+                      and wait for a confirmation to arrive
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger className="text-black font-public-sans text-[20px] font-bold leading-[30px]">
-                    How do I schedule online?
+                    When Will I Get A Confirmation?
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-4 text-balance">
                     <p>
-                      We offer worldwide shipping through trusted courier
-                      partners. Standard delivery takes 3-5 business days, while
-                      express shipping ensures delivery within 1-2 business
-                      days.
-                    </p>
-                    <p>
-                      All orders are carefully packaged and fully insured. Track
-                      your shipment in real-time through our dedicated tracking
-                      portal.
+                      You will get a confirmation as soon as we find a provider
+                      for your job via email and SMS.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger className="text-black font-public-sans text-[20px] font-bold leading-[30px]">
-                    When will I get a confirmation?
+                    Can I Later Reschedule My Booking Online?
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-4 text-balance">
                     <p>
-                      We stand behind our products with a comprehensive 30-day
-                      return policy. If you&apos;re not completely satisfied,
-                      simply return the item in its original condition.
-                    </p>
-                    <p>
-                      Our hassle-free return process includes free return
-                      shipping and full refunds processed within 48 hours of
-                      receiving the returned item.
+                      Yes, of course. After you book for the first time, an
+                      account will be made for you where you can login and
+                      modify your bookings at anytime.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
                   <AccordionTrigger className="text-black font-public-sans text-[20px] font-bold leading-[30px]">
-                    Can I later reschedule my booking online?
+                    What Areas Do You Service?
                   </AccordionTrigger>
                   <AccordionContent className="flex flex-col gap-4 text-balance">
                     <p>
-                      We stand behind our products with a comprehensive 30-day
-                      return policy. If you&apos;re not completely satisfied,
-                      simply return the item in its original condition.
-                    </p>
-                    <p>
-                      Our hassle-free return process includes free return
-                      shipping and full refunds processed within 48 hours of
-                      receiving the returned item.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-5">
-                  <AccordionTrigger className="text-black font-public-sans text-[20px] font-bold leading-[30px]">
-                    When will I get a confirmation?
-                  </AccordionTrigger>
-                  <AccordionContent className="flex flex-col gap-4 text-balance">
-                    <p>
-                      We stand behind our products with a comprehensive 30-day
-                      return policy. If you&apos;re not completely satisfied,
-                      simply return the item in its original condition.
-                    </p>
-                    <p>
-                      Our hassle-free return process includes free return
-                      shipping and full refunds processed within 48 hours of
-                      receiving the returned item.
+                      We serve homes in Broward County, Florida (Coral Springs,
+                      Coconut Creek, Margate and Pompano).
                     </p>
                   </AccordionContent>
                 </AccordionItem>

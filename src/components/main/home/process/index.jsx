@@ -32,9 +32,7 @@ const ProcessSection = () => {
                 Clean
               </CardTitle>
               <p className="text-sm text-[#797979] group-hover:text-white mt-2">
-                Lorem ipsum dolor sit amet consectetur. Nunc fusce hendrerit
-                risus lacinia in donec eleifend neque. Diam vitae non
-                pellentesque ut et interdum tellus ultricies.
+                One of our certified cleaners come over and cleans your home.
               </p>
               <Button className="mt-4 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300 bg-white text-blue-600 hover:bg-gray-100 self-center">
                 Read More
@@ -56,9 +54,8 @@ const ProcessSection = () => {
               Book Online
             </CardTitle>
             <p className="text-sm mt-2">
-              Lorem ipsum dolor sit amet consectetur. Nunc fusce hendrerit risus
-              lacinia in donec eleifend neque. Diam vitae non pellentesque ut et
-              interdum tellus ultricies.
+              Give us all details on your home and cleaning needs right here on
+              the website.
             </p>
             <Button className="mt-4 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300 bg-white text-blue-600 hover:bg-gray-100 self-center">
               Read More
@@ -79,9 +76,7 @@ const ProcessSection = () => {
                 Sit Back & Relax
               </CardTitle>
               <p className="text-sm text-gray-500 group-hover:text-white mt-2">
-                Lorem ipsum dolor sit amet consectetur. Nunc fusce hendrerit
-                risus lacinia in donec eleifend neque. Diam vitae non
-                pellentesque ut et interdum tellus ultricies.
+                Enjoy your newfound time and your clean home you deserve!
               </p>
               <Button className="mt-4 opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300 bg-white text-blue-600 hover:bg-gray-100 self-center">
                 Read More

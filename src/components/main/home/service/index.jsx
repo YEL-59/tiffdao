@@ -22,7 +22,7 @@ const Service = () => {
       </p>
       <div className=" flex items-center justify-center md:justify-center py-15 md:py-0 pt-10 md:pt-20">
         <div>
-          <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-6 items-stretch">
+          <div className="container mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 lg:gap-6 items-stretch">
             {/* Clean Card */}
             <div className="relative flex flex-col h-[315px] w-[297px] group">
               <Card
@@ -102,7 +102,7 @@ const Service = () => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block absolute right-0 bottom-10">
+      <div className="hidden lg:block absolute right-0 bottom-10">
         <img src={img} alt="" />
       </div>
     </section>
