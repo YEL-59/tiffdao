@@ -102,7 +102,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <a href="#" target="_blank" rel="noopener noreferrer">
             <Button
-              className="bg-[#0166A8] text-white  text-[16px] rounded-full  px-5 hover:border-[#6049bc]"
+              className="bg-[#0166A8] text-white  text-[16px] rounded-full  px-5 hover:bg-[#6693b1] hover:border-[#6049bc]"
               style={{ fontFamily: '"Public Sans", sans-serif' }}
             >
               Book A Cleaning
@@ -142,7 +142,7 @@ const Navbar = () => {
 
               <div className="mt-10">
                 <a href="#" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full border border-white bg-transparent text-[#0166A8] font-roboto text-[16px] hover:border-[#6049bc]">
+                  <Button className="w-full border border-white bg-transparent text-[#0166A8] font-roboto text-[16px] hover:bg-[#6693b1] hover:border-[#6049bc]">
                     Book A Cleaning
                   </Button>
                 </a>
